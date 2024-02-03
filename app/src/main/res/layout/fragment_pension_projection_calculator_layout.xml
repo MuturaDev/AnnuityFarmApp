@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/pension_projection_calculator_layout"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:animateLayoutChanges="true"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_marginBottom="100dp"
+        android:scrollbarSize="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="@dimen/about_details_text_size"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pension_projection_calculator"/>
+
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:text="@string/saving_plan_inputs"
+                android:textStyle="bold"
+                android:textSize="@dimen/about_text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/violet_200"
+                >
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spInsuranceProvider"
+                    android:paddingStart="0dp"
+                    android:backgroundTint="@color/violet_200"
+                    android:layout_width="match_parent"
+                    android:entries="@array/providers"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/violet_200"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/violet_200"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtYearsToInvest"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/years_to_invest"
+                    android:backgroundTint="@color/violet_200"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/violet_500"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:autofillHints="@string/years_to_invest" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/violet_200"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtInitialInvestment"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/initial_investment"
+                    android:backgroundTint="@color/violet_200"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/violet_500"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:autofillHints="@string/email" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/violet_200"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtExpectedAnnualInterestRate"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/expected_annual_interest_rate"
+                    android:backgroundTint="@color/violet_200"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/violet_500"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:autofillHints="@string/email" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="@string/scheduled_deposits"
+                android:textStyle="bold"
+                android:textSize="@dimen/about_text_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/violet_200"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtDepositAmount"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/deposit_amount"
+                    android:backgroundTint="@color/violet_200"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/violet_500"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:autofillHints="@string/deposit_amount" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColorHint="@color/violet_200"-->
+<!--                >-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/txtDepositFrequency"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:inputType="textEmailAddress"-->
+<!--                    android:hint="@string/deposit_frequency"-->
+<!--                    android:backgroundTint="@color/violet_200"-->
+<!--                    android:textStyle="normal"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textColorHint="@color/violet_500"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/poppins_regular"-->
+<!--                    android:autofillHints="@string/email" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/violet_200"
+                >
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spDepositFrequency"
+                    android:paddingStart="0dp"
+                    android:backgroundTint="@color/violet_200"
+                    android:layout_width="match_parent"
+                    android:entries="@array/deposit_frequency"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/violet_200"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/violet_200"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtAdditionalAnnualInvestments"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/additional_annual_investments"
+                    android:backgroundTint="@color/violet_200"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/violet_500"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:autofillHints="@string/email" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_random_rates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_margin="2dp"
+                        android:visibility="gone"
+                        android:id="@+id/img_checked_random_rates"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_checked_checkbox"/>
+
+                    <ImageView
+                        android:layout_margin="2dp"
+                        android:visibility="visible"
+                        android:id="@+id/imag_unchecked_random_rates"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_unchecked_checkbox"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/about_text_size"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/random_rates"
+                    android:textColor="@color/violet_200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layout_random_rates"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/violet_200"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtMin"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/min"
+                        android:backgroundTint="@color/violet_200"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/violet_500"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:autofillHints="@string/email" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/violet_200"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtMax"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/max"
+                        android:backgroundTint="@color/violet_200"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/violet_500"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:autofillHints="@string/email" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/violet_200"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtAverage"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:inputType="numberDecimal"
+                        android:enabled="false"
+                        android:hint="@string/average"
+                        android:backgroundTint="@color/violet_200"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/violet_500"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:autofillHints="@string/email" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:enabled="true"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:id="@+id/btnCalculate"
+        android:text="@string/calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

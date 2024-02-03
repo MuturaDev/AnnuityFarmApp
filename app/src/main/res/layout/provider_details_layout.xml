@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imgb_cancel"
+            android:background="@drawable/cancel_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+        <ImageView
+           android:layout_centerInParent="true"
+            android:src="@drawable/provider11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/btn_visit_website"
+            android:textSize="15sp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:textColor="@color/violet_200"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="@string/visit_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/violet_200"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Sanlam Kenya PLC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btn_back"
+            android:textSize="15sp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:textColor="@color/violet_200"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="@string/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btn_view_wikipedia"
+            android:visibility="visible"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/wikipidia2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <im.delight.android.webview.AdvancedWebView
+            android:layout_marginTop="10dp"
+            android:id="@+id/advanced_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/webview_progressbar"
+            android:layout_marginTop="5dp"
+            android:indeterminate="true"/>
+
+
+        <LinearLayout
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+            <ImageButton
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_backword"
+                android:layout_width="20dp"
+                android:background="@drawable/back_arrow"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+   <RelativeLayout
+       android:paddingRight="10dp"
+       android:paddingLeft="10dp"
+       android:id="@+id/providerDetails"
+       android:visibility="visible"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ScrollView
+           android:layout_marginBottom="50dp"
+           android:visibility="visible"
+           android:scrollbarThumbVertical="@null"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <TextView
+                   android:text="Industry Summary"
+                   android:textStyle="bold"
+                   android:textSize="15sp"
+                   android:textColor="@color/black"
+                   android:fontFamily="@font/poppins_bold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+
+
+               <TextView
+                   android:textColor="@color/black"
+                   android:textSize="12sp"
+                   android:fontFamily="@font/poppins_regular"
+                   android:text="@string/sanlam_kenya_plc_industry_summary"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:layout_marginTop="20dp"
+                   android:text="Performance"
+                   android:textStyle="bold"
+                   android:textSize="15sp"
+                   android:textColor="@color/black"
+                   android:fontFamily="@font/poppins_bold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <ImageView
+                   android:layout_marginTop="10dp"
+                   android:background="@drawable/performance1"
+                   android:layout_width="match_parent"
+                   android:layout_height="250dp"/>
+
+               <ImageView
+                   android:layout_marginTop="20dp"
+                   android:background="@drawable/performance2"
+                   android:layout_width="match_parent"
+                   android:layout_height="230dp"/>
+           </LinearLayout>
+       </ScrollView>
+
+       <Button
+           android:layout_alignParentBottom="true"
+           android:text="@string/apply_here"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
+
+
+</LinearLayout>

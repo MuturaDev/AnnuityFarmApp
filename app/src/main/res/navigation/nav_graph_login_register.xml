@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login_layout">
+        <action
+            android:id="@+id/action_LoginFragment_to_RegisterFragment"
+            app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_PasswordResetFragment"
+            app:destination="@id/PasswordResetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register_layout">
+
+        <action
+            android:id="@+id/action_RegisterFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PasswordResetFragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.PasswordResetFragment"
+        android:label="PasswordResetFragment"
+        tools:layout="@layout/fragment_password_reset">
+
+
+
+        <action
+            android:id="@+id/action_PasswordResetFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+</navigation>

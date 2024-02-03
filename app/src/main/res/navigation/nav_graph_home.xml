@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_IncomeDrawDownFragment"
+            app:destination="@id/income_fragment" />
+
+<!--        app:destination="@id/money_fragment"-->
+        <action
+            android:id="@+id/action_HomeFragment_to_InvestmentMoneyFragment"
+            app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_AnnuityFragment"
+            app:destination="@id/annuity_fragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_PensionFragment"
+            app:destination="@id/pension_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_RegisterFragment"
+            app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_NotificationFragment"
+            app:destination="@id/NotificationFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pension_fragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.PensionFragment"
+        android:label="PensionFragment"
+        tools:layout="@layout/fragment_pension">
+
+        <action
+            android:id="@+id/action_PensionFragment_to_HomeFragment"
+            app:destination="@id/home_fragment" />
+        <action
+            android:id="@+id/action_pension_fragment_to_subtype_fragment"
+            app:destination="@id/subtype_fragment" />
+        <action
+            android:id="@+id/action_pension_fragment_to_pension_project_calculator_fragment"
+            app:destination="@id/pension_project_calculator_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/annuity_fragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.AnnuityFragment"
+        android:label="AnnuityFragment"
+        tools:layout="@layout/fragment_annuity">
+
+        <action
+            android:id="@+id/action_AnnuityFragment_to_HomeFragment"
+            app:destination="@id/home_fragment" />
+        <action
+            android:id="@+id/action_annuity_fragment_to_subtype_fragment"
+            app:destination="@id/subtype_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/income_fragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.IncomeDrawDownFragment"
+        android:label="IncomeDrawDownFragment"
+        tools:layout="@layout/fragment_income_draw_down">
+
+        <action
+            android:id="@+id/action_IncomeDrawDownFragment_to_HomeFragment"
+            app:destination="@id/home_fragment" />
+        <action
+            android:id="@+id/action_income_fragment_to_subtype_fragment"
+            app:destination="@id/subtype_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/money_fragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.InvestmentMoneyFragment"
+        android:label="InvestmentMoneyFragment"
+        tools:layout="@layout/fragment_investment_money">
+
+        <action
+            android:id="@+id/action_InvestmentMoneyFragment_to_HomeFragment"
+            app:destination="@id/home_fragment" />
+        <action
+            android:id="@+id/action_RegisterFragment_to_subtype_fragment"
+            app:destination="@id/subtype_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/subtype_fragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.SubtypeFragment"
+        android:label="SubtypeFragment"
+        tools:layout="@layout/fragment_subtype">
+
+        <action
+            android:id="@+id/action_Subtype_to_HomeFragment"
+            app:destination="@id/home_fragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/pension_project_calculator_fragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.PensionProjectionCalculatorFragment"
+        android:label="PensionProjectionCalculatorFragment"
+        tools:layout="@layout/fragment_pension_projection_calculator_layout">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/NotificationFragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.NotificationFragment"
+        android:label="NotificationFragment"
+        tools:layout="@layout/fragment_notification">
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.annuityfarm.annuityfarmapp.fragments.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register_layout">
+
+        <argument android:name="Message"
+            app:argType="string"
+            android:defaultValue="Edit"/>
+
+    </fragment>
+
+</navigation>

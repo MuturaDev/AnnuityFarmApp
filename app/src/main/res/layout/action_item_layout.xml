@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/btn_action"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:background="@drawable/solid_violet_rounded_corner_bg"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="0dp"
+            android:text="@string/pension_application"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/subTitle"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="0dp"
+            android:text="@string/make_an_application_to_a_provider_of_your_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+<!--<LinearLayout
+        android:id="@+id/btn_pension_transfer"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:background="@drawable/violet_rounded_corner_bg"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/pension_transfer_icon_violet"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/violet_200"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginTop="5dp"
+                android:padding="0dp"
+                android:text="@string/pension_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/violet_200"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="0dp"
+                android:text="@string/make_a_transfer_from_your_provider_to_another"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>-->

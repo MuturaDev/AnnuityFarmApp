@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "240550528120",
+    "project_id": "annuityfarm",
+    "storage_bucket": "annuityfarm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240550528120:android:09289726da2363ed81598d",
+        "android_client_info": {
+          "package_name": "com.annuityfarm.annuityfarmapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240550528120-esjg6dlj5k2vojstj0sbrsnmb4e4slq4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.annuityfarm.annuityfarmapp",
+            "certificate_hash": "6bbe1efe56f5864f0ebd98dcfd1e2a1f0f08029c"
+          }
+        },
+        {
+          "client_id": "240550528120-o8ej4bhsil2f59gabdb1dua56e4pjdk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqswqXKiBYohvMaBBR0zIsAMX2HpiiUSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240550528120-o8ej4bhsil2f59gabdb1dua56e4pjdk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

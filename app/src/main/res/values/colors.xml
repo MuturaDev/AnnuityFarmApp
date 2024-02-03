@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="violet_200">#A235B5</color>
+    <color name="violet_500">#A235B5</color>
+    <color name="violet_700">#A235B5</color>
+    <color name="teal_200">#000</color>
+    <color name="teal_700">#000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="half_black">#2A2E34</color>
+    <color name="red">@android:color/holo_red_dark</color>
+
+
+    <color name="colorSuccess">#4BB543</color>
+    <color name="colorWarning">#FFCC00</color>
+    <color name="colorNeutral">#434343</color>
+    <color name="colorError">#CC0000</color>
+    <color name="colorTextPrimary">#212121</color>
+</resources>

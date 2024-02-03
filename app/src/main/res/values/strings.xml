@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Annuity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Login Fragment</string>
+    <string name="second_fragment_label">Register Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="new_here">New here?</string>
+    <string name="stay_true">Stay \nTrue.</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_lowercase">Email</string>
+    <string name="password_lowercaps">Password</string>
+    <string name="annuity_firm">Annuity Farm</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pension">Pension</string>
+    <string name="login">Login</string>
+    <string name="home">Home</string>
+    <string name="home_description">home_description</string>
+    <string name="pension_description">pension_description</string>
+    <string name="annuity_description">annuity_description</string>
+    <string name="annuity">Annuity</string>
+    <string name="income_draw_down">Income Draw Down</string>
+    <string name="income_description">income_description</string>
+    <string name="money_investment">Profile</string>
+    <string name="money_description">money_description</string>
+    <string name="ellipsis">&#8230;</string>
+    <string name="empty_string" />
+    <string name="about_pension">About Pension</string>
+    <string name="about_pension_details">Pension insurance contract is an insurance contract that specifies pension plan contributions to an insurance undertaking in exchange for which the pension plan benefits will be paid when the members reach a specified retirement age or on earlier exit of members from the plan.</string>
+    <string name="pension_application">Pension Application</string>
+    <string name="pension_transfer">Pension Transfer</string>
+    <string name="make_a_transfer_from_your_provider_to_another">Make a transfer from your current provider to another</string>
+    <string name="action_you_can_perform_with_your_pension">Things you can do with your pension</string>
+    <string name="make_a_withdrawal_of_your_moneys">Make a withdrawal of your moneys</string>
+    <string name="pension_withdrawals">Pension Withdrawals</string>
+    <string name="make_an_application_to_a_provider_of_your_choice">Make an application to a provider of your choice</string>
+    <string name="select_providers">Select Provider(s)</string>
+    <string name="visit_website">Visit Website</string>
+    <string name="sanlam_kenya_plc_industry_summary">Sanlam Kenya plc is an insurance, investment and retirement group based in Kenya.\nThe Group’s headquarters are located in Nairobi, Kenya, with subsidiaries and associates in Kenya. Sanlam Kenya plc is a member of the Sanlam Group, a South African JSE listed financial services group with business interests in Africa, Europe, India, the United States, Australia and South East Asia</string>
+    <string name="about_annuity">About Annuity</string>
+    <string name="about_annuity_details">An annuity is a type of policy issued by an insurance company to promise you an income that can last you a lifetime. Even after you stop working, bills will still come in. Count on your fixed annuity for a dependable income stream to help you handle some of the basic costs of living.</string>
+    <string name="request_a_quote">REQUEST A QUOTE</string>
+    <string name="about_income_drawdown_details">An Income Drawdown Fund is a contractual agreement between you and an insurance company. Here, you deposit a lump-sum payment(s), and in exchange, draw a regular income from the deposit(s) you made into this retirement fund. The balance that remains in your account continues to get invested.</string>
+    <string name="about_income_drawdown">About Income Drawdown</string>
+    <string name="about_investment_money_market">About Investment / Money Market</string>
+    <string name="about_investment_money_market_details">How does a money market mutual fund work? A money market fund is a type of mutual fund that allows an investor to earn interest on cash reserves within a portfolio—the stray money left over from transactions, or cash held until it can be invested in other instruments. … Funds pay dividends to investors based on short-term interest rates.</string>
+    <string name="back">Back</string>
+    <string name="pension_projection_calculator">Pension Projection Calculator</string>
+    <string name="saving_plan_inputs">Saving Plan Inputs</string>
+    <string name="years_to_invest">Years To Invest</string>
+    <string name="scheduled_deposits">Scheduled Deposits</string>
+    <string name="calculator">CALCULATE</string>
+    <string name="initial_investment">Initial Investment</string>
+    <string name="expected_annual_interest_rate">Expected Annual Interest Rate</string>
+    <string name="deposit_amount">Deposit Amount</string>
+    <string name="min">Min</string>
+    <string name="average">Average</string>
+    <string name="max">Max</string>
+    <string name="random_rates">Random Rates</string>
+    <string name="deposit_frequency">Deposit Frequency</string>
+    <string name="additional_annual_investments">Additional Annual Investments</string>
+    <string name="cancel">Cancel</string>
+    <string name="summary_of_results">Summary of Results</string>
+    <string name="apply_here">Apply here</string>
+
+
+    <string name="item_document_capture">Document capture</string>
+    <string name="item_document_capture_custom">Document capture custom</string>
+    <string name="action_flash">Flash</string>
+
+    <string name="download_the_document_attached">Download the document to fill in</string>
+    <string name="step_name">Step Name</string>
+    <string name="step_title">Step Title</string>
+
+
+    <string name="step_1">Step 1</string>
+    <string name="step_title_1">Download the document to fill in</string>
+    <string name="step_2">Step 2</string>
+    <string name="step_title_2">Make sure you have filled the following fields</string>
+    <string name="step_3">Step 3</string>
+    <string name="step_title_3"> </string>
+    <string name="step_4">Step 4</string>
+    <string name="step_title_4"> </string>
+    <string name="step_5">Step 5</string>
+    <string name="step_title_5"> </string>
+    <string name="step_6">Step 6</string>
+    <string name="step_title_6"> </string>
+
+
+    <string name="dash">-</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password_reset">Password Reset</string>
+
+
+</resources>

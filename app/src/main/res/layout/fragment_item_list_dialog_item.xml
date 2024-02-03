@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/btn_provider"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_icon"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/provider1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:textColor="@color/violet_200"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="5dp"
+            android:padding="0dp"
+            android:text="Sanlam Kenya PLC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+<!--        <ToggleButton-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:id="@+id/toggle_board_alight_without_scanning"-->
+<!--            android:textOn=""-->
+<!--            android:textOff=""-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:background="@drawable/expand_collapse_toggle"/>-->
+
+    </RelativeLayout>
+
+</LinearLayout>
+

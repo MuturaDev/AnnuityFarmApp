@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string-array name="providers">
+        <item>Insurance Provider</item>
+    </string-array>
+
+    <string-array name="deposit_frequency">
+        <item>@string/deposit_frequency</item>
+    </string-array>
+</resources>

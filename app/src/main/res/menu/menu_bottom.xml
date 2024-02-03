@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_fragment"
+        android:title="@string/home"
+        android:contentDescription="@string/home_description"
+        android:icon="@drawable/home_icon"/>
+
+    <item
+        android:id="@+id/pension_fragment"
+        android:title="@string/empty_string"
+        android:contentDescription="@string/pension_description"
+        android:icon="@drawable/pension_icon"/>
+
+    <item
+        android:id="@+id/annuity_fragment"
+        android:title="@string/empty_string"
+        android:contentDescription="@string/annuity_description"
+        android:icon="@drawable/annuity_icon"/>
+
+    <item
+        android:id="@+id/income_fragment"
+        android:title="@string/empty_string"
+        android:contentDescription="@string/income_description"
+        android:icon="@drawable/income_draw_down_icon"/>
+
+<!--    <item-->
+<!--        android:id="@+id/money_fragment"-->
+<!--        android:title="@string/empty_string"-->
+<!--        android:contentDescription="@string/money_description"-->
+<!--        android:icon="@drawable/money_investment"/>-->
+
+    <item
+        android:id="@+id/action_home_fragment_to_RegisterFragment"
+        android:title="@string/empty_string"
+        android:contentDescription="@string/money_description"
+        android:icon="@drawable/ic_profile"/>
+
+</menu>

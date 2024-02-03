@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:scrollbarSize="0dp"
+    android:layout_marginBottom="60dp"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.annuityfarm.annuityfarmapp.customviews.TimelineHeaderView
+            android:visibility="visible"
+            android:id="@+id/step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:StepName="@string/step_1"
+            app:StepTitle="@string/step_title_1"
+            app:contentContainer="@layout/step1_layout"/>
+
+        <com.annuityfarm.annuityfarmapp.customviews.TimelineHeaderView
+            android:visibility="gone"
+            android:id="@+id/step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:StepName="@string/step_2"
+            app:StepTitle="@string/step_title_2"
+            app:contentContainer="@layout/step2_layout"/>
+
+        <com.annuityfarm.annuityfarmapp.customviews.TimelineHeaderView
+            android:visibility="gone"
+            android:id="@+id/step3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:StepName="@string/step_1"
+            app:StepTitle="@string/download_the_document_attached"
+            app:contentContainer="@layout/step1_layout"/>
+
+        <com.annuityfarm.annuityfarmapp.customviews.TimelineHeaderView
+            android:visibility="gone"
+            android:id="@+id/step4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:StepName="@string/step_1"
+            app:StepTitle="@string/download_the_document_attached"
+            app:contentContainer="@layout/step1_layout"/>
+
+        <com.annuityfarm.annuityfarmapp.customviews.TimelineHeaderView
+            android:visibility="gone"
+            android:id="@+id/step5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:StepName="@string/step_1"
+            app:StepTitle="@string/download_the_document_attached"
+            app:contentContainer="@layout/step1_layout"/>
+
+        <com.annuityfarm.annuityfarmapp.customviews.TimelineHeaderView
+            android:visibility="gone"
+            android:id="@+id/step6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:StepName="@string/step_1"
+            app:StepTitle="@string/download_the_document_attached"
+            app:contentContainer="@layout/step1_layout"/>
+
+        <com.annuityfarm.annuityfarmapp.customviews.TimelineHeaderView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:StepName="@string/step_1"
+            app:StepTitle="@string/download_the_document_attached"
+            app:contentContainer="@layout/step1_layout"/>
+
+    </LinearLayout>
+
+</ScrollView>
